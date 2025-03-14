@@ -1,0 +1,61 @@
+body {
+    font-family: Roboto;
+    font-size: 1.4em;
+}
+
+.spaceBet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Wrap items on smaller screens */
+    gap: 10px; /* Adds space between elements */
+    padding: 10px 20px;
+}
+
+.cntr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-heading {
+    padding: 5px;
+    background-color:rgb(214, 214, 214);
+}
+
+/* .header-grouping {
+    display: flex;
+    
+}
+.header-content {
+    padding: 1%;
+    font-size: 0.80em;
+} */
+
+.header-grouping {
+    display: flex;
+    align-items: center; /* Align image and text */
+}
+
+.header-content {
+    padding: 1%;
+    font-size: 0.80em;
+}
+
+/* Show image only on screens wider than 768px (tablets & desktops) */
+.header-grouping img {
+    display: block; /* Default: show on large screens */
+    width: 15%;
+}
+
+/* Hide image on mobile screens (below 768px) */
+@media (max-width: 767px) {
+    .header-grouping img {
+        display: none;
+    }
+
+    .header-grouping {
+        flex-direction: column; /* Stack text content in center */
+        text-align: center;
+    }
+}
